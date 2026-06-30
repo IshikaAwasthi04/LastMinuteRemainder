@@ -1,0 +1,31 @@
+.recreate-button{
+
+    display:block;
+
+    margin:40px auto;
+
+    padding:16px 40px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#4F46E5;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.recreate-button:hover{
+
+    background:#4338CA;
+
+    transform:scale(1.04);
+
+}

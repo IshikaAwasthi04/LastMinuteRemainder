@@ -1,0 +1,57 @@
+.loading-overlay{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(7,17,31,.8);
+
+backdrop-filter:blur(15px);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999;
+
+color:white;
+
+}
+
+.loader{
+
+width:70px;
+
+height:70px;
+
+border:7px solid rgba(255,255,255,.2);
+
+border-top:7px solid #60A5FA;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+margin-bottom:30px;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}

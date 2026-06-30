@@ -1,0 +1,234 @@
+/* ===========================
+   PAGE
+=========================== */
+
+.schedule-page{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top right,#1e3a8a33,transparent 35%),
+    radial-gradient(circle at bottom left,#9333ea22,transparent 35%),
+    #08111F;
+
+    color:white;
+
+    padding:110px 40px 60px;
+
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.dashboard-section{
+
+    max-width:1500px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:32px;
+
+    padding:45px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin:45px 0;
+
+}
+
+/* ===========================
+   PROGRESS
+=========================== */
+
+.progress-bar{
+
+    margin:35px 0;
+
+}
+
+/* ===========================
+   TODAY GOAL
+=========================== */
+
+.today-goal{
+
+    margin:45px 0;
+
+}
+
+/* ===========================
+   MOTIVATION
+=========================== */
+
+.motivation-card{
+
+    margin:35px 0 45px;
+
+}
+
+/* ===========================
+   DAILY SCHEDULE
+=========================== */
+
+.schedule-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+    margin-top:40px;
+
+    margin-bottom:50px;
+
+}
+
+/* ===========================
+   AI TIP
+=========================== */
+
+.ai-tip-card{
+
+    margin-top:30px;
+
+}
+
+/* ===========================
+   RECREATE BUTTON
+=========================== */
+
+.recreate-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:45px;
+
+}
+
+/* ===========================
+   EMPTY PAGE
+=========================== */
+
+.empty-page{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#08111F;
+
+    color:white;
+
+    font-size:35px;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4f46e5;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08111F;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1400px){
+
+.schedule-container{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:1100px){
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.schedule-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:750px){
+
+.dashboard-section{
+
+padding:25px;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.schedule-container{
+
+grid-template-columns:1fr;
+
+}
+
+.schedule-page{
+
+padding:90px 15px;
+
+}
+
+}
