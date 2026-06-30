@@ -12,7 +12,7 @@ function ScheduleCard({ day, taskId, schedule, setSchedule }) {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/tasks/${taskId}/day/${day.day}`,
+        `https://lastminuteremainder.onrender.com/api/tasks/${taskId}/day/${day.day}`,
         {
           completed: !completed
         }

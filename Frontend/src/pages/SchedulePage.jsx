@@ -120,7 +120,7 @@ useEffect(() => {
 
             const response = await axios.post(
 
-                "http://localhost:5000/api/ai/recreate-plan",
+                "https://lastminuteremainder.onrender.com/api/ai/recreate-plan",
 
                 {
                     taskId
