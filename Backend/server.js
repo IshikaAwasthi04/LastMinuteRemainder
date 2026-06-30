@@ -8,7 +8,7 @@ const aiRoutes = require("./routes/aiRoutes");
 
 const app=express();
 connectDB();
-console.log(process.env.GEMINI_API_KEY);
+
 
 
 app.use(cors());
@@ -20,7 +20,7 @@ app.get("/",(req,res)=>{
     res.send("server running");
 });
 
-const PORT=5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>{
     console.log(`Server running on port ${PORT}`);
 });
