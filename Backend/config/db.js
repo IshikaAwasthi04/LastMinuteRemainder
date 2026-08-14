@@ -1,5 +1,4 @@
-//password:zZIY03XFU40VEkG0 of mogodb atlas
-//connection string:mongodb+srv://ishikaaa:zZIY03XFU40VEkG0@cluster0.nozopii.mongodb.net/?appName=Cluster0
+
 
 const mongoose=require("mongoose");
 const connectDB=async()=>{
